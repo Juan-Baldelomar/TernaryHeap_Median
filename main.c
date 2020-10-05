@@ -18,6 +18,12 @@ void medianDriver() {
     printf("median: %f\n", theap_median(thmin, thmax, 4));
     printf("median: %f\n", theap_median(thmin, thmax, 6));
     printf("median: %f\n", theap_median(thmin, thmax, 2));
+    printf("median: %f\n", theap_median(thmin, thmax, 8)); //4
+    printf("median: %f\n", theap_median(thmin, thmax, 15)); //5
+    printf("median: %f\n", theap_median(thmin, thmax, 20)); //6
+    printf("median: %f\n", theap_median(thmin, thmax, 3)); //5
+    printf("median: %f\n", theap_median(thmin, thmax, 5)); //5
+
 }
 
 void testMinHeap() {
@@ -47,7 +53,8 @@ void testMinHeap() {
 }
 
 int main() {
-    testMinHeap();
+    //testMinHeap();
+    medianDriver();
 
     return 0;
 }

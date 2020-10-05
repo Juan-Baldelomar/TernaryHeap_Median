@@ -96,7 +96,7 @@ void insert(THeap *h, int data){
 int removeMax(THeap *h){
     int max = h->data[0];
     h->data[0] = h->data[--(h->size)];
-    topDownHeapify(h->data, 0, topNonLeafNode(h));
+    topDownHeapify(h->data, 0, h->size);
     return max;
 }
 
@@ -194,7 +194,7 @@ void minHeapInsert(THeap *h, int data){
 int removeMin(THeap *h){
     int max = h->data[0];
     h->data[0] = h->data[--(h->size)];
-    minTopDownHeapify(h->data, 0, topNonLeafNode(h));
+    minTopDownHeapify(h->data, 0, h->size);
     return max;
 }
 
